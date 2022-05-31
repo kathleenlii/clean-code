@@ -5,6 +5,16 @@ body {
     font-family: Lato, sans-serif;
 }
 
+ul {
+    margin: 0;
+    padding: 0px;
+}
+
+input,
+button {
+    outline: none;
+}
+
 .info {
     width: 500px;
     margin: 0 auto;
@@ -36,20 +46,14 @@ body {
     display: flex;
 }
 
-ul {
-    margin: 0;
-    padding: 0px;
-}
+
 
 .list__tasks,
 .header {
     list-style: none;
 }
 
-input,
-button {
-    outline: none;
-}
+
 
 button {
     background: none;
@@ -90,12 +94,12 @@ input[type="text"] {
     width: 400px;
 }
 
-input[type="text"]:focus {
+input:focus {
     color: #333;
 }
 
 /* New Task */
-label[for="item"] {
+.header {
     display: block;
     margin: 0 0 20px;
 }
