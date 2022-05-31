@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<HEAD>
+<head>
     <title>Todo App</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css" type="text/css" MEDIA="screen" charset="utf-8">
-</HEAD>
+</head>
 
 <body>
+
     <div class="info">
-        <img src="./eisenhower-matrix.jpg">
+        <img class="info__img" src="./eisenhower-matrix.jpg">
         <a class="info__details" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </div>
 
     <div class="main">
-        <p id="item">
-            <label for="add__item">Add Item</label>
 
+        <label class="header" for="item">Add Item</label>
         <div class="item__field">
-            <input id="add__item" class="task" type="text">
+            <input id="add__item" class="add__item" type="text">
             <button>Add</button>
         </div>
 
-        </p>
-
-        <h3>Todo</h3>
+        <h3 class="header">Todo</h3>
         <ul id="todo__tasks">
-            <li><input type="checkbox">
+            <li class="list__tasks">
+                <input type="checkbox">
                 <label class="task">Pay Bills</label>
                 <input type="text" class="task">
                 <button class="edit">Edit</button>
@@ -35,7 +34,7 @@
                 </button>
             </li>
 
-            <li class="edit__task">
+            <li class="list__tasks edit__task">
                 <input type="checkbox">
                 <label class="task">Go Shopping</label>
                 <input type="text" value="go shopping" class="task">
@@ -46,11 +45,11 @@
             </li>
         </ul>
 
-        <h3>Completed</h3>
+        <h3 class="header">Completed</h3>
         <ul id="completed__tasks">
-            <li>
+            <li class="list__tasks">
                 <input type="checkbox" checked>
-                <label class="task">See the Doctor</label>
+                <label class="task completed__task">See the Doctor</label>
                 <input type="text" class="task">
                 <button class="edit">Edit</button>
                 <button class="delete">
