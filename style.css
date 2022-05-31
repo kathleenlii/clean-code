@@ -67,7 +67,7 @@ button:hover {
 
 /* Heading */
 h3,
-label[for='add__item'] {
+label[for="add__item"] {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -95,7 +95,7 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for='add__item'] {
+label[for="add__item"] {
     display: block;
     margin: 0 0 20px;
 }
